@@ -23,7 +23,7 @@ jobs:
           node-version: '24'
           cache: 'npm'
 
-      - name: Diagnostic: Node / npm / tsc
+      - name: "Diagnostic: Node / npm / tsc"
         run: |
           node -v
           npm -v
