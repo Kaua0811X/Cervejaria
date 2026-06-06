@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -19,27 +21,24 @@ jobs:
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
-      # Roda direto na raiz, sem 'cd client'
       - name: Install Dependencies 📦
         run: npm install
 
-      # Executa o build padrão do seu package.json
-        # Roda o build direto na raiz, garantindo que dist seja recriada
-        - name: Build Project 🏗️
-          run: |
-            # remove qualquer dist já comitado/gerado por engano
-            rm -rf dist
-            npm run build
-            echo "=== build output (root) ==="
-            ls -la
+      - name: Build Project 🏗️
+        run: |
+          # remove qualquer dist já comitado/gerado por engano
+          rm -rf dist
+          npm run build
+          echo "=== build output (root) ==="
+          ls -la
 
-      # Faz o deploy da pasta compilada
       - name: Deploy to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: dist/client
           branch: gh-pages
           clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
