@@ -48,7 +48,7 @@ const isVercel = Boolean(process.env.VERCEL);
 
 export default defineConfig({
   vite: {
-    base: isVercel ? "/" : "/Rei_do_Malte/",
+    base: isVercel ? "/" : "/Cervejaria/",
   },
 
   tanstackStart: {
