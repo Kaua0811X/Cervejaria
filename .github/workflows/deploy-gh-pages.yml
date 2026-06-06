@@ -21,17 +21,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install client dependencies 📦
+      # Instala os pacotes locais para o Vite e os plugins funcionarem
+      - name: Install Dependencies 📦
         run: |
           cd Client
           npm install
 
-      - name: Build Client (force with explicit base) 🏗️
+      # Executa o build padrão do seu package.json
+      - name: Build Project 🏗️
         run: |
           cd Client
-          npx vite build --base=/Cervejaria/
+          npm run build
 
-      - name: Deploy Client dist to gh-pages 🚀
+      # Faz o deploy da pasta compilada
+      - name: Deploy to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: Client/dist
