@@ -1,5 +1,5 @@
-import { K as jsxRuntimeExports } from "./server-BXTPVNas.js";
-import { N as Navbar, F as Footer } from "./Footer-DdAX3tMn.js";
+import { K as jsxRuntimeExports } from "./server-DCdKjH6Y.js";
+import { N as Navbar, F as Footer } from "./Footer-BTKRvfIu.js";
 function PageShell({ children, title, kicker }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
