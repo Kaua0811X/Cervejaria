@@ -24,20 +24,20 @@ jobs:
       # Instala os pacotes locais para o Vite e os plugins funcionarem
       - name: Install Dependencies 📦
         run: |
-          cd Client
+          cd client
           npm install
 
       # Executa o build padrão do seu package.json
       - name: Build Project 🏗️
         run: |
-          cd Client
+          cd client
           npm run build
 
       # Faz o deploy da pasta compilada
       - name: Deploy to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Client/dist
+          folder: client/dist
           branch: gh-pages
           clean: true
 
