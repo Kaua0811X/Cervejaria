@@ -33,7 +33,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/client
+          # publish the Vite build output
+          publish_dir: ./dist
           publish_branch: gh-pages
           user_name: 'github-actions'
           user_email: 'actions@github.com'

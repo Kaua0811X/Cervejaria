@@ -46,9 +46,10 @@ jobs:
           GH_PAGES_BASE_PATH: /Cervejaria/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/client
+          # upload the Vite build output (dist)
+          path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
