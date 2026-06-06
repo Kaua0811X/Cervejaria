@@ -21,15 +21,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Dependencies 📦
-        run: |
-          npm install
-
-      - name: Build Project 🏗️
-        run: |
-          npm run build
-
-      - name: Deploy to gh-pages 🚀
+      - name: Deploy existing ./dist to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./dist
