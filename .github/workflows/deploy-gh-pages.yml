@@ -26,8 +26,14 @@ jobs:
         run: npm install
 
       # Executa o build padrão do seu package.json
-      - name: Build Project 🏗️
-        run: npm run build
+        # Roda o build direto na raiz, garantindo que dist seja recriada
+        - name: Build Project 🏗️
+          run: |
+            # remove qualquer dist já comitado/gerado por engano
+            rm -rf dist
+            npm run build
+            echo "=== build output (root) ==="
+            ls -la
 
       # Faz o deploy da pasta compilada
       - name: Deploy to gh-pages 🚀
