@@ -48,7 +48,9 @@ const isVercel = Boolean(process.env.VERCEL);
 
 export default defineConfig({
   vite: {
-    base: isVercel ? "/" : "/Cervejaria/",
+    // Force base to the GitHub Pages subpath to ensure built assets reference
+    // the correct location regardless of CI env vars.
+    base: "/Cervejaria/",
   },
 
   tanstackStart: {
