@@ -62,6 +62,7 @@ export default defineConfig({
   environments: {
     client: {
       build: {
+        sourcemap: true,
         rollupOptions: {
           input: "./src/main.tsx",
         },
