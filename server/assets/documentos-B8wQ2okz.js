@@ -1,10 +1,10 @@
-import { K as jsxRuntimeExports } from "./server-DCdKjH6Y.js";
-import { P as PageShell } from "./PageShell-By8gMUNc.js";
+import { K as jsxRuntimeExports } from "./server-BXTPVNas.js";
+import { P as PageShell } from "./PageShell-D8GyjBD1.js";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
-import "./Footer-BTKRvfIu.js";
-import "./router-DSrW3ttm.js";
+import "./Footer-DdAX3tMn.js";
+import "./router-C_Xmh1uq.js";
 const driveLink = "https://drive.google.com/drive/folders/17v0uJ-LGNe2HY3ZksE1S7SsksfDhOLqo?usp=drive_link";
 const gameLink = "https://github.com/dudamerg9-c/Rei_do_Malte";
 const productionLink = "https://docs.google.com/spreadsheets/d/1cDFK6n1H72q6wRglz2V7nI3-1_TdOUq2rRyu6TXk6yM/edit?usp=sharing";

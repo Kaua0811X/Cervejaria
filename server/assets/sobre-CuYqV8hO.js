@@ -1,10 +1,10 @@
-import { K as jsxRuntimeExports } from "./server-DCdKjH6Y.js";
-import { P as PageShell } from "./PageShell-By8gMUNc.js";
+import { K as jsxRuntimeExports } from "./server-BXTPVNas.js";
+import { P as PageShell } from "./PageShell-D8GyjBD1.js";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
-import "./Footer-BTKRvfIu.js";
-import "./router-DSrW3ttm.js";
+import "./Footer-DdAX3tMn.js";
+import "./router-C_Xmh1uq.js";
 const brewery = "/Cervejaria/assets/about-brewery-DjSqO6E8.jpg";
 const timeline = [{
   ano: "2023",

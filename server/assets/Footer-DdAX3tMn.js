@@ -1,5 +1,5 @@
-import { T as reactExports, K as jsxRuntimeExports } from "./server-DCdKjH6Y.js";
-import { L as Link } from "./router-DSrW3ttm.js";
+import { T as reactExports, K as jsxRuntimeExports } from "./server-BXTPVNas.js";
+import { L as Link } from "./router-C_Xmh1uq.js";
 const logo = "/Cervejaria/assets/logo-MqXcNC3_.jpeg";
 const links = [
   { to: "/", label: "Início" },
