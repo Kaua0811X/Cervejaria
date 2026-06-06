@@ -21,10 +21,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Deploy existing ./dist to gh-pages 🚀
+      - name: Install client dependencies 📦
+        run: |
+          cd Client
+          npm install
+
+      - name: Build Client (force with explicit base) 🏗️
+        run: |
+          cd Client
+          npx vite build --base=/Cervejaria/
+
+      - name: Deploy Client dist to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./dist
+          folder: Client/dist
           branch: gh-pages
           clean: true
 
